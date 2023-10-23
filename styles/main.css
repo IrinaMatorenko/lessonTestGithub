@@ -26,3 +26,11 @@
   border-radius: 100px;
   margin-bottom: 40px;
 }
+.tit {
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+.picture {
+  width: 600px;
+  height: 800px;
+}
