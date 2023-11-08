@@ -1,2 +1,2 @@
-# Lesson 2 JavaScript
+# Lesson 3 JavaScript
 
