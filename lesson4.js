@@ -31,7 +31,7 @@ let arr = [];
 {
   arr = ['10', '20', '30', '50', '235', '3000'];
   for (let elem of arr) {
-    if (elem[0] == 1 || elem[0] == 2 || elem[0] == 5) {
+    if (elem[0] === 1 || elem[0] === 2 || elem[0] === 5) {
       console.log(+elem);
     }
   }
@@ -40,7 +40,7 @@ let arr = [];
 {
   let week = ['ПН', 'ВТ', 'СР', 'ЧТ', 'ПТ', 'СБ', 'ВС'];
   for (let i = 0; i < week.length; i++) {
-    if (i == 5 || i == 6) {
+    if (i === 5 || i === 6) {
       document.write('<b>' + week[i] + ' ' + '</b>');
     } else {
       document.write(week[i] + ' ');
@@ -79,19 +79,34 @@ let arr = [];
 // ------- task 9 -------------------------------
 {
   arr = [5, 9, 21, , , 9, 78, , , , 6];
-  console.log(arr);
   let count = 0;
   for (let i = 0; i < arr.length; i++) {
-    if (i === undefined) {
-      count += 1;
-      console.log(count);
+    if (arr[i] === undefined) {
+      count++;
     }
   }
+  console.log(count);
 }
 // ------------ task 10 --------------------
 {
   arr = [48, 9, 0, 4, 21, 2, 1, 0, 8, 84, 76, 8, 4, 13, 2];
+  let index = arr.indexOf(0); //находим индекс первого ноля
+  let lastIndex = arr.lastIndexOf(0); //находим индекс последнего ноля
+  let count = 0;
+  for (let i = index; i < lastIndex; i++) {
+    count += arr[i];
+  }
+  console.log(count);
 }
 // -------------- task 11 --------------------
 {
+  let height = 5;
+  let str = '^';
+  let countWhitespace = height - 1; //считаем пробелы
+  for (let i = 1; i <= height; i++) {
+    let whiteSpace = ' '.repeat(countWhitespace);
+    countWhitespace--; //отнимаем пробелы по краям
+    console.log(`${whiteSpace}${str}${whiteSpace}`);
+    str += '^^';
+  }
 }
