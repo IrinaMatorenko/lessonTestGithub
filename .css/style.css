@@ -1,0 +1,76 @@
+body {
+  margin: 0;
+}
+
+.container {
+  max-width: 1240px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.todo {
+  max-width: 500px;
+  padding: 0 0 20px 20px;
+  margin-left: 20%;
+  margin-top: 20%;
+  background-color: rgb(247, 239, 238);
+  border: 3px solid rgb(110, 2, 2);
+  box-shadow: 10px 10px 19px rgb(85, 3, 3);
+}
+.todo__title {
+  font-size: 42px;
+  text-align: center;
+  color: maroon;
+}
+.todo__input {
+  border: none;
+  font-size: 20px;
+}
+.todo__add {
+  padding: 5px;
+  font-weight: 600;
+  background-color: tomato;
+  border-radius: 10px 5px 10px 5px;
+  margin-left: 15px;
+}
+.todo__add:hover {
+  cursor: pointer;
+  background-color: rgb(74, 242, 45);
+}
+.todo__list {
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-left: 20px;
+  font-size: 22px;
+  font-weight: 600;
+}
+.todo__edit {
+  background-color: rgb(54, 131, 40);
+  cursor: pointer;
+  border: none;
+  padding: 5px;
+}
+.todo__pencil {
+  background-color: goldenrod;
+  cursor: pointer;
+  border: none;
+  padding: 5px;
+  margin-left: 15px;
+}
+.todo__delete {
+  background-color: rgb(205, 3, 3);
+  padding: 5px;
+  margin-left: 15px;
+  border: none;
+  cursor: pointer;
+}
+
+.edit {
+  color: rgba(54, 131, 40, 0.5);
+  text-decoration: line-through;
+}
+
+.button {
+  display: none;
+}/*# sourceMappingURL=style.css.map */
